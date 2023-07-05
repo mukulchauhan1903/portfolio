@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ye.css">
+<style>
+    body{
+        background-color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+    
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="intro.html" target="_blank">My Intro</a></li>
+                <li><a href="services.html" target="_blank">Services</a></li>
+                <li><a href="blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact Me</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="ham.jpg" alt="" srcset="" width="23">
+                <img class="cross" src="cross.webp" alt="" srcset="" width="23">
+            </div>
+            <div class="int">
+          <h1>My Intro</h1>
+          <p>My name is Alice Awesome, and I’m a third-year biomedical engineering student at Michigan Tech. I just finished a six-month co-op at XYZ company, working as a quality engineer in the New Product Development Department.  I was responsible for product safety testing and assessment documentation. My engineering co-op and coursework in research methods has also prepared me to work in product development and design. I’m currently looking for a spring co-op for next year and would be thrilled to work for (your) ABC company.</p>
+        </div>
+        <div class="skill">
+            <h1> My Skills</h1>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>SQL</li>
+                <li>Java Swing</li>
+            </ol>
+        </div>
+    </div>
+</body>
+<script type="text/Javascript">
+    document.querySelector('.cross').style.display='none';
+document.querySelector('.hamburger').addEventListener("click",()=>{
+document.querySelector('.sidebar').classList.toggle('sidebargo');
+if(document.querySelector('.sidebar').classList.contains('sidebargo')){
+    document.querySelector('.ham').style.display='inline';
+    document.querySelector('.cross').style.display='none';
+}else{
+    document.querySelector('.ham').style.display='none';
+    document.querySelector('.cross').style.display='inline';
+}
+})
+</script>
+</html>

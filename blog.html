@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ye.css">
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="intro.html" target="_blank">My Intro</a></li>
+                <li><a href="services.html" target="_blank">Services</a></li>
+                <li><a href="blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact Me</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="ham.jpg" alt="" srcset="" width="23">
+                <img class="cross" src="cross.webp" alt="" srcset="" width="23">
+            </div>
+ <div class="blogcontainer">
+<h2> Blogs By Rahul</h2>
+<div class="blogitems">
+    <h3>Learn Javascript</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, deleniti.</p>
+<button id="bt8">Read More</button>
+</div>
+<div class="blogitems">
+    <h3>Learn HTML</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugiat esse nostrum quidem deleniti itaque reprehenderit ullam officiis soluta, tenetur totam modi maiores blanditiis, aliquid delectus! Vero animi qui dignissimos repellat cum iusto, molestias libero laborum, velit voluptate fuga doloribus!</p>
+    <button id="bt8">Read More</button>
+</div>
+<div class="blogitems">
+    <h3>Learn CSS</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique atque, nobis, adipisci amet perspiciatis harum dolore quia placeat sunt laudantium eos. Quod velit eaque modi, consectetur inventore cupiditate voluptas fugit nisi ratione animi quas maxime maiores. Ab excepturi eos iste.</p>
+    <button id="bt8">Read More</button>
+</div>
+ </div>
+    </div>
+</body>
+<script type="text/Javascript">
+    document.querySelector('.cross').style.display='none';
+document.querySelector('.hamburger').addEventListener("click",()=>{
+document.querySelector('.sidebar').classList.toggle('sidebargo');
+if(document.querySelector('.sidebar').classList.contains('sidebargo')){
+    document.querySelector('.ham').style.display='inline';
+    document.querySelector('.cross').style.display='none';
+}else{
+    document.querySelector('.ham').style.display='none';
+    document.querySelector('.cross').style.display='inline';
+}
+})
+</script>
+</html>
